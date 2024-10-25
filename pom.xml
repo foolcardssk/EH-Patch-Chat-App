@@ -5,7 +5,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.6.4</version>
+        <version>2.6.15</version> <!-- Updated Spring Boot version -->
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>io.snyk.snyklabs</groupId>
@@ -15,15 +15,15 @@
     <description>vulnerable chat app for demonstration</description>
 
     <properties>
-        <java.version>1.8</java.version>
-        <vavr.version>0.10.2</vavr.version>
-        <vavr-jackson.version>0.10.0</vavr-jackson.version>
-        <spock-core.version>2.1-groovy-3.0</spock-core.version>
-        <maven-compiler.version>3.8.0</maven-compiler.version>
-        <frontend-maven.version>1.9.1</frontend-maven.version>
-        <maven-resources.version>3.1.0</maven-resources.version>
-        <node.version>v16.14.2</node.version>
-        <npm.version>6.14.4</npm.version>
+        <java.version>11</java.version> <!-- Updated to Java 11 -->
+        <vavr.version>0.10.3</vavr.version> <!-- Update Vavr to latest secure version -->
+        <vavr-jackson.version>0.10.2</vavr-jackson.version> <!-- Update Vavr-Jackson -->
+        <spock-core.version>2.3-groovy-3.0</spock-core.version> <!-- Update Spock to latest version -->
+        <maven-compiler.version>3.8.1</maven-compiler.version> <!-- Latest stable Maven compiler plugin -->
+        <frontend-maven.version>1.12.0</frontend-maven.version> <!-- Updated frontend Maven plugin -->
+        <maven-resources.version>3.2.0</maven-resources.version> <!-- Latest stable Maven resources plugin -->
+        <node.version>v18.17.1</node.version> <!-- Update Node.js to LTS -->
+        <npm.version>9.6.7</npm.version> <!-- Update npm to latest -->
     </properties>
 
     <dependencies>
@@ -70,7 +70,7 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>${maven-compiler.version}</version>
                 <configuration>
-                    <release>11</release>
+                    <release>11</release> <!-- Compile with Java 11 -->
                 </configuration>
             </plugin>
             <plugin>
